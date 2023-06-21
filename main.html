@@ -11,7 +11,7 @@
 	<form action="/submit" method="post" >
 		<h2>Feedback Form</h2>
     <label for="name"> name</label>
-    <input required type="text" id="name"min="3" max="50" placeholder="Enter your name">
+    <input required type="text" id="name"minlength="3" maxlength="50" step="2"placeholder="Enter your name">
     <br>
     <label for="portfolio">portfolio</label>
     <input required type="text" id="portfolio" placeholder="Enter your webpage">
@@ -21,7 +21,7 @@
     <br>
     <label for="likeness">likeness</label>
     <br>
-    <textarea name="likeness" id="likeness" cols="30" rows="10" placeholder="Write how you like your color"></textarea>
+    <textarea name="likeness" id="likeness" cols="30" rows="10" minlength="1" maxlength="100" step="2" placeholder="Write how you like your color"></textarea>
     <br>
     <button>submit</button>
 </form>
